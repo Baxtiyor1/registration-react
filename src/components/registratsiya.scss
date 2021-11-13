@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+}
+.dark{
+    color: #ffffff !important;
+    background: #000000 !important;
+    box-shadow: 0 0 4px 4px #fff !important;
+}
+
+.light{
+    color: rgb(10, 94, 2) !important;
+    background-color: #fff !important;
+    border-color: #000 !important;
+    box-shadow: 0 0 4px 4px rgb(10, 94, 2) !important;
+}
+
+.wrapper{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+}
+.header{
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 400px;
+    box-shadow: 0 0 4px 4px #fff;
+    &__box{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: none !important;
+    }
+    &__text{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        box-shadow: none !important;
+    }
+    &__select{
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    &__theme{
+        border: none;
+        cursor: pointer;
+        outline: none;
+        text-transform: uppercase;
+    }
+}
+.form{
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    &__input{
+        margin-bottom: 5px;
+        padding: 15px  0 15px 20px;
+        font-size: 20px;
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+    &__subtext{
+        min-height: 18px;
+        margin-bottom: 30px;
+        width: 100%;
+        color: rgb(0, 255, 0);
+    }
+    &__title{
+        margin-bottom: 25px;
+        color: #fff;
+        text-decoration: underline;
+        box-shadow: none !important;
+    }
+    &__btn{
+        padding: 10px 25px;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__status{
+        width: 100%;
+        color: rgb(0, 255, 0);
+    }
+}
